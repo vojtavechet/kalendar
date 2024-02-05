@@ -17,11 +17,11 @@
   <body>
     <p id="datum"></p>
     <div id="kal">
-   
+   <div id="panel">
       <p id="koleckol"> < </p>
       <div id = "mesic">duben</div>
       <p id = "koleckop">></p>
-      <div id="rok">2023</div>
+      <div id="rok">2023</div></div>
       <table id="kalendar">
         <tr >
             <th>PO</th>
@@ -29,8 +29,8 @@
             <th>ST</th>
             <th>CT</th>
             <th>PA</th>
-            <th>SO</th>
-            <th>NE</th>
+            <th id ="red">SO</th>
+            <th id ="red">NE</th>
         </tr>
         <tr >
             <th></th>
@@ -78,6 +78,40 @@
             <th>30</th>
         </tr>
     </table>
+
+
+   <div id="udalost">
+<p id="vu">vytvoreni udalosti</p>
+<label for="nazev">nazev</label>
+<input id="nazev"type="text"><br>
+<label for="date_od">od</label>
+<input type="date" name="" id="date_od">
+<label for="date_do">do</label>
+<input type="date" name="" id="date_do"><br>
+<label for="oznaceni">oznaceni</label>
+<input type="color" name="" id="oznaceni"><br>
+<label for="poznamka">poznamka</label>
+<input id="poznamka"type="text-area"><br>
+<button>ulozit</button>
+   </div>
+
+<div  id="dnesni_udalosti">
+<div id="du">dnesni udalosti</div>
+<div>dneska nemate zadnou udalost</div>
+
+</div>
+
+
+
+
+<div id="poznamky">
+
+  <div id="pz">poznamky</div>
+  <div> nemate zadnou poznamku</div>
+
+
+
+</div>
 
   </body>
   <script src="date.js"></script>
