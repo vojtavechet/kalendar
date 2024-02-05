@@ -18,12 +18,14 @@
 
 
 #kal{
-  
+
+    text-align: center;
     height: 300px;
     width: 300px;
 
 }
 #prvni_radek{
+    
     display: flex;
     padding: 20px;
 
@@ -73,8 +75,56 @@
     position: absolute;
     margin-top: 60px;
     margin-left: 30px;
+    width: 400px;
 
 }
 th{
     padding: 5px;
+}
+
+#red{
+    color: red;
+}
+#udalost{
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 70px;
+}
+
+#panel{
+
+    margin-left: 80px;
+}
+
+input{
+
+    margin: 10px;
+}
+.button{
+margin: 10px;
+
+}
+#dnesni_udalosti{
+    position: absolute;
+    margin-left: 600px;
+    
+}
+
+#du{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#vu{
+    font-size: 30px;
+}
+#pz{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+#poznamky{
+    position: absolute;
+    margin-left: 610px;
+    margin-top: 300px;
+
 }
