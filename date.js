@@ -1,8 +1,15 @@
-const vu = document.getElementById("vu");
 
-const month = new Date()
-const date = new Date()
-let mo = month.getMonth()
-let day = date.getDate();
-document.getElementById("datum").innerHTML=  day +"."+ (mo +1 ) +"."
+function datum_cas(){
+    const datum = new Date()
+    let mesic = datum.getMonth()
+    let den = datum.getDate();
+    document.getElementById("datum").innerHTML=  den +"."+ (mesic +1 ) +"."
+    const cas = new Date()
+    let hodiny = cas.getHours()
+    let minuty = cas.getMinutes()
+    document.getElementById("cas").innerHTML=  hodiny +":"+ minuty 
 
+
+setTimeout(datum_cas , 1000);}
+
+datum_cas()
