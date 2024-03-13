@@ -15,7 +15,10 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <p id="datum"></p>
+    <date id="datum"></date>
+    <time id="cas"></time>
+
+
     <div id="kal">
    <div id="panel">
       <p id="koleckol"> < </p>
@@ -82,6 +85,7 @@
 
    <div id="udalost">
 <p id="vu">vytvoreni udalosti</p>
+
 <label for="nazev">nazev</label>
 <input id="nazev"type="text"><br>
 <label for="date_od">od</label>
@@ -89,7 +93,7 @@
 <label for="date_do">do</label>
 <input type="date" name="" id="date_do"><br>
 <label for="oznaceni">oznaceni</label>
-<input type="color" name="" id="oznaceni"><br>
+<input type="color" name="color" id="oznaceni"><br>
 <label for="poznamka">poznamka</label>
 <input id="poznamka"type="text-area"><br>
 <button>ulozit</button>
@@ -101,18 +105,13 @@
 
 </div>
 
-
-
-
 <div id="poznamky">
 
   <div id="pz">poznamky</div>
   <div> nemate zadnou poznamku</div>
 
-
-
 </div>
 
   </body>
-  <script src="date.js"></script>
+  <script src="date_time.js"></script>
 </html>
