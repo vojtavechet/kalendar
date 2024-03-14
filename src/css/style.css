@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-color: #252525;
+}
+#datum{
+    text-align: center;
+    margin: auto;
+    font-size: 90px;
+}
+
+#vy{
+     background-color: gray;
+     margin: 50px;
+}
+
+
+#kal{
+
+    text-align: center;
+    height: 300px;
+    width: 300px;
+
+}
+#prvni_radek{
+    
+    display: flex;
+    padding: 20px;
+
+}
+#koleckol{
+    margin-top: 30px;
+    margin-left: 40px;
+    background-color: gray;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 1px;
+    cursor: pointer;
+    position: absolute;
+}
+
+
+#koleckop{
+    margin-top: 30px;
+    margin-left: 230px;
+    background-color: gray;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 1px;
+    cursor: pointer;
+    position: absolute;
+}
+
+#mesic{
+    margin-top: 10px;
+    margin-left: 130px;
+    position: absolute;
+    
+  
+}
+
+#rok{
+    margin-top: 30px;
+    margin-left: 133px;
+    position: absolute;
+}
+
+#kalendar{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 30px;
+    width: 400px;
+
+}
+th{
+    padding: 5px;
+}
+
+#red{
+    color: red;
+}
+#udalost{
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 70px;
+}
+
+#panel{
+
+    margin-left: 80px;
+}
+
+input{
+
+    margin: 10px;
+}
+.button{
+margin: 10px;
+
+}
+#dnesni_udalosti{
+    position: absolute;
+    margin-left: 600px;
+    
+}
+
+#du{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#vu{
+    font-size: 30px;
+}
+#pz{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+#poznamky{
+    position: absolute;
+    margin-left: 610px;
+    margin-top: 300px;
+
+}
