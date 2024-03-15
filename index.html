@@ -1,130 +1,128 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
-    <meta
-      http-equiv="X-Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
-    <title>KALENDÁŘ</title>
-    <link rel="stylesheet" href="../kalendar/src/css/style.css">
-  </head>
-  <body>
-    <date id="datum"></date>
-    <time id="cas"></time>
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+  <title>KALENDÁŘ</title>
+  <link rel="stylesheet" href="../kalendar/src/css/style.css">
+</head>
+
+<body>
+  <date id="datum"></date>
+  <time id="cas"></time>
 
 
-    <div id="kal">
-   <div id="panel">
-      <p id="koleckol"> < </p>
-      <div id = "mesic"></div>
-      <p id = "koleckop">></p>
-      <div id="rok">2023</div></div>
-      <table id="kalendar">
-        <tr >
-            <th>PO</th>
-            <th>UT</th>
-            <th>ST</th>
-            <th>CT</th>
-            <th>PA</th>
-            <th id ="red">SO</th>
-            <th id ="red">NE</th>
-        </tr>
-        <tr >
-            <th class="dny" data-kalendar="1"></th>
-            <th class="dny" data-kalendar="2"></th>
-            <th class="dny" data-kalendar="3"></th>
-            <th class="dny" data-kalendar="4"></th>
-            <th class="dny" data-kalendar="5"></th>
-            <th class="dny" data-kalendar="6"></th>
-            <th class="dny" data-kalendar="7"></th>
-        </tr>
-        <th class="dny" data-kalendar="8"></th>
-        <th class="dny" data-kalendar="9"></th>
-        <th class="dny" data-kalendar="10"></th>
-        <th class="dny" data-kalendar="11"></th>
-        <th class="dny" data-kalendar="12"></th>
-        <th class="dny" data-kalendar="13"></th>
-        <th class="dny" data-kalendar="14"></th>
-    </tr>
-    <th class="dny" data-kalendar="15"></th>
-    <th class="dny" data-kalendar="16"></th>
-    <th class="dny" data-kalendar="17"></th>
-    <th class="dny" data-kalendar="18"></th>
-    <th class="dny" data-kalendar="19"></th>
-    <th class="dny" data-kalendar="20"></th>
-    <th class="dny" data-kalendar="21"></th>
-</tr>
-<th class="dny" data-kalendar="22"></th>
-<th class="dny" data-kalendar="23"></th>
-<th class="dny" data-kalendar="24"></th>
-<th class="dny" data-kalendar="25"></th>
-<th class="dny" data-kalendar="26"></th>
-<th class="dny" data-kalendar="27"></th>
-<th class="dny" data-kalendar="28"></th>
-</tr>
-<th class="dny" data-kalendar="29"></th>
-<th class="dny" data-kalendar="30"></th>
-<th class="dny" data-kalendar="31"></th>
-<th class="dny" data-kalendar="32"></th>
-<th class="dny" data-kalendar="33"></th>
-<th class="dny" data-kalendar="34"></th>
-<th class="dny" data-kalendar="35"></th>
-</tr>
-</tr>
-<th class="dny" data-kalendar="35"></th>
-<th class="dny" data-kalendar="36"></th>
-<th class="dny" data-kalendar="37"></th>
-<th class="dny" data-kalendar="38"></th>
-<th class="dny" data-kalendar="39"></th>
-<th class="dny" data-kalendar="40"></th>
-<th class="dny" data-kalendar="41"></th>
-</tr>
+  <div id="kal">
+    <div id="panel">
+      <p id="koleckol"><</p>
+          <div id="mesic"></div>
+          <p id="koleckop">></p>
+          <div id="rok"></div>
+    </div>
+    <table id="kalendar">
+      <tr>
+        <th>PO</th>
+        <th>UT</th>
+        <th>ST</th>
+        <th>CT</th>
+        <th>PA</th>
+        <th id="red">SO</th>
+        <th id="red">NE</th>
+      </tr>
+      <tr>
+        <th class="dny" data-kalendar="1"></th>
+        <th class="dny" data-kalendar="2"></th>
+        <th class="dny" data-kalendar="3"></th>
+        <th class="dny" data-kalendar="4"></th>
+        <th class="dny" data-kalendar="5"></th>
+        <th class="dny" data-kalendar="6"></th>
+        <th class="dny" data-kalendar="7"></th>
+      </tr>
+      <th class="dny" data-kalendar="8"></th>
+      <th class="dny" data-kalendar="9"></th>
+      <th class="dny" data-kalendar="10"></th>
+      <th class="dny" data-kalendar="11"></th>
+      <th class="dny" data-kalendar="12"></th>
+      <th class="dny" data-kalendar="13"></th>
+      <th class="dny" data-kalendar="14"></th>
+      </tr>
+      <th class="dny" data-kalendar="15"></th>
+      <th class="dny" data-kalendar="16"></th>
+      <th class="dny" data-kalendar="17"></th>
+      <th class="dny" data-kalendar="18"></th>
+      <th class="dny" data-kalendar="19"></th>
+      <th class="dny" data-kalendar="20"></th>
+      <th class="dny" data-kalendar="21"></th>
+      </tr>
+      <th class="dny" data-kalendar="22"></th>
+      <th class="dny" data-kalendar="23"></th>
+      <th class="dny" data-kalendar="24"></th>
+      <th class="dny" data-kalendar="25"></th>
+      <th class="dny" data-kalendar="26"></th>
+      <th class="dny" data-kalendar="27"></th>
+      <th class="dny" data-kalendar="28"></th>
+      </tr>
+      <th class="dny" data-kalendar="29"></th>
+      <th class="dny" data-kalendar="30"></th>
+      <th class="dny" data-kalendar="31"></th>
+      <th class="dny" data-kalendar="32"></th>
+      <th class="dny" data-kalendar="33"></th>
+      <th class="dny" data-kalendar="34"></th>
+      <th class="dny" data-kalendar="35"></th>
+      </tr>
+      </tr>
+      <th class="dny" data-kalendar="35"></th>
+      <th class="dny" data-kalendar="36"></th>
+      <th class="dny" data-kalendar="37"></th>
+      <th class="dny" data-kalendar="38"></th>
+      <th class="dny" data-kalendar="39"></th>
+      <th class="dny" data-kalendar="40"></th>
+      <th class="dny" data-kalendar="41"></th>
+      </tr>
     </table>
 
 
-   <div id="udalost">
-<p id="vu">vytvoreni udalosti</p>
+    <div id="udalost">
+      <p id="vu">vytvoreni udalosti</p>
 
-<label for="nazev">nazev</label>
-<input id="nazev"type="text"><br>
-<label for="date_od">od</label>
-<input type="date" name="" id="date_od">
-<label for="date_do">do</label>
-<input type="date" name="" id="date_do"><br>
-<label for="oznaceni">oznaceni</label>
-<input type="color" name="color" id="oznaceni"><br>
-<label for="poznamka">poznamka</label>
-<input id="poznamka"type="text-area"><br>
-<button>ulozit</button>
-   </div>
+      <label for="nazev">nazev</label>
+      <input id="nazev" type="text"><br>
+      <label for="date_od">od</label>
+      <input type="date" name="" id="date_od">
+      <label for="date_do">do</label>
+      <input type="date" name="" id="date_do"><br>
+      <label for="oznaceni">oznaceni</label>
+      <input type="color" name="color" id="oznaceni"><br>
+      <label for="poznamka">poznamka</label>
+      <input id="poznamka" type="text-area"><br>
+      <button>ulozit</button>
+    </div>
 
-<div  id="dnesni_udalosti">
-<div id="du">dnesni udalosti</div>
-<div>dneska nemate zadnou udalost</div>
+    <div id="dnesni_udalosti">
+      <div id="du">dnesni udalosti</div>
+      <div>dneska nemate zadnou udalost</div>
 
-</div>
-
-
-
-
-<div id="poznamky">
-
-  <div id="pz">poznamky</div>
-  <div> nemate zadnou poznamku</div>
+    </div>
 
 
 
-</div>
 
-  </body>
-  <script src="../kalendar/src/js/date_time.js"></script>
-  <script src="../kalendar/src/js/input_udalosti.js"></script>
-  <script src="../kalendar/src/js/kalendar.js"></script>
-  <script src="../kalendar/src/js/vypis_udalosti.js"></script>
+    <div id="poznamky">
+
+      <div id="pz">poznamky</div>
+      <div> nemate zadnou poznamku</div>
+
+
+
+    </div>
+
+</body>
+<script src="../kalendar/src/js/date_time.js"></script>
+<script src="../kalendar/src/js/input_udalosti.js"></script>
+<script src="../kalendar/src/js/kalendar.js"></script>
+<script src="../kalendar/src/js/vypis_udalosti.js"></script>
+
 </html>
