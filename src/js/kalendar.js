@@ -9,21 +9,31 @@ let rok = date.getFullYear()
 let mesic = date.getMonth()
 let den = date.getDay()
 
-let rok_defalut = date.getFullYear()
-let mesic_defalut = date.getMonth()
-let den_defalut = date.getDate()
+
+const date_defalut = new Date(rok, mesic)
+let rok_defalut = date_defalut.getFullYear()
+let mesic_defalut = date_defalut.getMonth()
+let den_defalut = date_defalut.getDay()
+let datum_default = date_defalut.getDate()
 
 console.log(rok)
 console.log(mesic)
-console.log(den)
+console.log(den_defalut)
+console.log(date)
 
 let mesice_dni = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 let mesice_kalendar_nazev = ["Leden", "Unor", "brezen", "Duben", "Kveten", "Cerven", "Cervenec", "Srpen", "Zari", "Rijen", "Listopad", "Prosinec"]
 
 
 
+
+
+
+
+
 function Kalendar(a) {
 
+   
 
     if (rok % 4 === 0 || rok % 100 === 0 && rok % 400 === 0) {
         mesice_dni[1] = 29
@@ -37,20 +47,37 @@ function Kalendar(a) {
         dny[b].style.color = "white"
     }
 
+
+
+    let umisteni_cisla_kalendar = 0
+
     for (let i = 1; i <= mesice_dni[mesic]; i++) {
-        let umisteni_cisla_kalendar = a + i - 2
+        console.log(a)
+
+
+        if (a === 0) {
+            umisteni_cisla_kalendar = 5 + i
+        }
+        else {
+            umisteni_cisla_kalendar = i + a - 2
+        }
+
         dny[umisteni_cisla_kalendar].innerHTML = i
         mesic_kalendar.innerHTML = mesice_kalendar_nazev[mesic]
         rok_nad_kalendarem.innerHTML = rok
     }
 
     if (rok === rok_defalut && mesic === mesic_defalut) {
-        dny[(den_defalut + a - 2)].style.color = "red";
+        dny[(den_defalut + a)].style.color = "red";
     }
 
 }
 
-Kalendar(den)
+
+
+
+
+
 
 tlacitkoL.onclick = () => {
 
