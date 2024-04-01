@@ -11,7 +11,6 @@ function datum_cas() {
    }
    document.getElementById("cas").innerHTML = hodiny + ":" + minuty
 
-
    setTimeout(datum_cas, 1000);
 }
 datum_cas()
