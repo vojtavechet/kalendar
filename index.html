@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+  <title>KALENDÁŘ</title>
+  <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+  <div id="ulozeni_udalosti">
+    <button id="udalost_button">x</button><br>
+    <label for="eventName">Název události:</label><br>
+    <input type="text" id="udalost_nazev" name="eventName"><br><br>
+    <label for="color">označení</label><br>
+    <input type="color" id="input_color" name="color"><br><br>
+    <label for="cas">čas</label><br>
+    <select id="hodiny">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+      <option value="21">21</option>
+      <option value="22">22</option>
+      <option value="23">23</option>
+    </select>
+    <select id="minuty">
+      <option value="00">00</option>
+      <option value="05">05</option>
+      <option value="10">10</option>
+      <option value="15">15</option>
+      <option value="20">20</option>
+      <option value="25">25</option>
+      <option value="30">30</option>
+      <option value="35">35</option>
+      <option value="40">40</option>
+      <option value="45">45</option>
+      <option value="50">50</option>
+      <option value="55">55</option>
+    </select><br><br>
+    <input type="submit" id="button_udalosti" value="vytvoriy udalost">
+  </div>
+  <span id="stranka">
+    <div id="datum"></div>
+    <div id="kal">
+      <div id="panel">
+        <div id="mesic"></div>
+        <div id="rok"></div>
+      </div>
+      <div id="tlacitak_posun_mesice">
+        <div id="koleckol">
+          <</div>
+            <div id="koleckop">></div>
+        </div>
+        <table id="kalendar">
+          <tr>
+            <th>PO</th>
+            <th>ÚT</th>
+            <th>ST</th>
+            <th>ČT</th>
+            <th>PÁ </th>
+            <th id="red">SO</th>
+            <th id="red">NE</th>
+          </tr>
+          <tr>
+            <th class="dny" data-kalendar="0"></th>
+            <th class="dny" data-kalendar="1"></th>
+            <th class="dny" data-kalendar="2"></th>
+            <th class="dny" data-kalendar="3"></th>
+            <th class="dny" data-kalendar="4"></th>
+            <th class="dny" data-kalendar="5"></th>
+            <th class="dny" data-kalendar="6"></th>
+          </tr>
+          <th class="dny" data-kalendar="7"></th>
+          <th class="dny" data-kalendar="8"></th>
+          <th class="dny" data-kalendar="9"></th>
+          <th class="dny" data-kalendar="10"></th>
+          <th class="dny" data-kalendar="11"></th>
+          <th class="dny" data-kalendar="12"></th>
+          <th class="dny" data-kalendar="13"></th>
+          </tr>
+          <th class="dny" data-kalendar="14"></th>
+          <th class="dny" data-kalendar="15"></th>
+          <th class="dny" data-kalendar="16"></th>
+          <th class="dny" data-kalendar="17"></th>
+          <th class="dny" data-kalendar="18"></th>
+          <th class="dny" data-kalendar="19"></th>
+          <th class="dny" data-kalendar="20"></th>
+          </tr>
+          <th class="dny" data-kalendar="21"></th>
+          <th class="dny" data-kalendar="22"></th>
+          <th class="dny" data-kalendar="23"></th>
+          <th class="dny" data-kalendar="24"></th>
+          <th class="dny" data-kalendar="25"></th>
+          <th class="dny" data-kalendar="26"></th>
+          <th class="dny" data-kalendar="27"></th>
+          </tr>
+          <th class="dny" data-kalendar="28"></th>
+          <th class="dny" data-kalendar="29"></th>
+          <th class="dny" data-kalendar="30"></th>
+          <th class="dny" data-kalendar="31"></th>
+          <th class="dny" data-kalendar="32"></th>
+          <th class="dny" data-kalendar="33"></th>
+          <th class="dny" data-kalendar="34"></th>
+          </tr>
+          </tr>
+          <th class="dny" data-kalendar="35"></th>
+          <th class="dny" data-kalendar="36"></th>
+          <th class="dny" data-kalendar="37"></th>
+          <th class="dny" data-kalendar="38"></th>
+          <th class="dny" data-kalendar="39"></th>
+          <th class="dny" data-kalendar="40"></th>
+          <th class="dny" data-kalendar="41"></th>
+          </tr>
+        </table>
+        <div id="dnesni_udalosti">
+          <div id="du">dnesní udalosti</div>
+          <div id="vypsani_dnesni_udalosti">dnes nemáte žádnou událost</div><br><br>
+          <button id="vytvoreni_udalosti">vytvořit událost</button>
+        </div>
+  </span>
+</body>
+<script src="./renderer.js"></script>
+
+</html>
